@@ -15,7 +15,7 @@ import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 // import withStyles from "@mui/material"
 // import { styled } from "@mui/material/styles";
-import BigHeading from "./BigHeading.js";
+import Card from "./Card.js";
 export default function App() {
   return (
     // <Box sx={{display: 'flex', flexWrap: "wrap-reverse", '& > :not(style)': {m:1, width:128, height:128,},}}>
@@ -26,8 +26,7 @@ export default function App() {
       justifyContent="center"
       style={{ backgroundColor: "#e8f9fa" }}
     >
-      <BigHeading/>
-      <BigHeading/>
+      <Card/>
 
       <Grid item sm={8} md={6}>
         <Paper
