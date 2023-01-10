@@ -28,10 +28,7 @@ export default function App() {
     >
       <BigHeading/>
       <BigHeading/>
-      <BigHeading/>
-      <BigHeading/>
-      <BigHeading/>
-      <BigHeading/>
+
       <Grid item sm={8} md={6}>
         <Paper
           variant="outlined"
