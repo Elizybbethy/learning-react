@@ -18,7 +18,9 @@ import * as React from "react";
 import Card from "./Card.js";
 
 const users = ({title: 'try',  content: 'learn'});
-export default function App() {
+export default 
+
+function App() {
   return (
     // <Box sx={{display: 'flex', flexWrap: "wrap-reverse", '& > :not(style)': {m:1, width:128, height:128,},}}>
 
