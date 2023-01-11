@@ -5,22 +5,14 @@ import React from 'react'
 
 
 
-export default class card extends React.Component() {
-    constructor(props){
-        super(props);
-        this.state ={
-            name: props.name,    
-            activity: props.activity
-        }
-    }
-    render () {
-        
-        return (
-            <div>
-                <h1>name: {this.state.name}</h1>
-                <h2>activity: {this.state.activity}</h2>
-            </div>
-        
-        )
-     };
+export default function Card(props) {
+    
+    return (
+     <div>
+           <h1>{props.name}</h1>
+        <h1>{props.activity}</h1>
+        </div>
+    )
 }
+
+

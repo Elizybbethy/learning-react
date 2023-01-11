@@ -29,7 +29,11 @@ export default function App() {
     //   style={{ backgroundColor: "#e8f9fa" }}
     // >
     <div>
-      <Card name="Lizybethy" activity="developing"/>
+       <Card name="Lizybethy" activity="developing"/>
+       <Card name="Lizybethy1" activity="developing222"/>
+       <Card name="Lizybdsdethy" activity="developin1ewg"/>
+       <Card name="Lizdsdybethy" activity="sd"/>
+       <Card name="sa" activity="develodping"/>
     </div>
       
 
