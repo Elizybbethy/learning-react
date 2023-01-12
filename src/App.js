@@ -16,6 +16,7 @@ import * as React from "react";
 // import withStyles from "@mui/material"
 // import { styled } from "@mui/material/styles";
 import Card from "./Card.js";
+// import { Paper } from "@mui/material";
 
 const users = ({title: 'try',  content: 'learn'});
 export default 
@@ -24,22 +25,26 @@ function App() {
   return (
     // <Box sx={{display: 'flex', flexWrap: "wrap-reverse", '& > :not(style)': {m:1, width:128, height:128,},}}>
 
-    // <Grid
-    //   container
-    //   spacing={2}
-    //   justifyContent="center"
-    //   style={{ backgroundColor: "#e8f9fa" }}
-    // >
+    
     <div>
-       <Card name="Lizybethy" activity="developing"/>
-       <Card name="Lizybethy1" activity="developing222"/>
-       <Card name="Lizybdsdethy" activity="developin1ewg"/>
-       <Card name="Lizdsdybethy" activity="sd"/>
-       <Card name="sa" activity="develodping"/>
+      <Card username="ElizyBbethy" account="Twitter" Home="Home" content="welcome to the free world!"/>
+       {/* <Grid
+      container
+      spacing={2}
+      justifyContent="center"
+      style={{ backgroundColor: "#e8f9fa" }} 
+     >
+    <Grid item sm={8} md={6}>
+      <Paper variant="outlined" elevation={3} sx={{p: 2, margin: 5, maxWidth: 400, backgroundColor: "#b1f2b2"}}>
+
+      </Paper>
+    </Grid>
+     </Grid>
+        */}
     </div>
       
 
-//       <Grid item sm={8} md={6}>
+//       
 //         <Paper
 //           variant="outlined"
 //           elevation={4}
@@ -99,6 +104,6 @@ function App() {
 //           </Grid>
 //         </Paper>
 //       </Grid>
-//     </Grid>
+    // </Grid>
   );
 }
