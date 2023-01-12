@@ -1,9 +1,6 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import Card from '@mui/material/Card'
-// import { render } from 'react-dom'
-// import App from './App'
 
 
 
