@@ -1,6 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import {useState, useEffect} from 'react';
 
 
@@ -53,6 +54,11 @@ export default function Card(props) {
                 {/* <Typography value={hi.hello} onChange={e => setName({hello: e.target.value})}> </Typography> */}
                 <Typography gutterButton variant='subtittle2' color="primary">{users.username}</Typography>
             </Grid>
+            </Grid>
+        </Grid>
+        <Grid container>
+            <Grid item>
+            <FavoriteBorderIcon></FavoriteBorderIcon>
             </Grid>
         </Grid>
         {/* </Card> */}
