@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div>
-      <Card username="ElizyBbethy" accountname="Twitter" Home="Home" content="welcome to the free world!" comment="comment on this post"/>
+      <Card username="ElizyBbethy" accountName="Twitter" Home="Home" content="welcome to the free world!" comment="comment on this post"/>
     </div>
   );
 }
