@@ -15,7 +15,7 @@ export default function Card(props) {
     // }
     // setUsers(prevState => name);
     // const [users, accounts, comments] = useState({username:"lizy", accountname:"twits", comment:'like'})
-    const [users, hi, comments] = useState({username:"lizy", hello:"twits", comment:'like'})
+    const [users, account, comments] = useState({username:"lizy", accountname:"twits", comment:'like'})
 // }
 //   function cardchanges() {
 //     users.username
