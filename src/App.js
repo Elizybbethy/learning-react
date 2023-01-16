@@ -22,12 +22,16 @@ const users = ({title: 'try',  content: 'learn'});
 export default 
 
 function App() {
+
+
   return (
     // <Box sx={{display: 'flex', flexWrap: "wrap-reverse", '& > :not(style)': {m:1, width:128, height:128,},}}>
 
     
     <div>
       <Card username="ElizyBbethy" account="Twitter" Home="Home" content="welcome to the free world!"/>
+      <Card username="ElizyBbethy" account="Twitter" Home="Home" content="welcome to the free world!"/>
+      <Card username="ElizyBbeth2y" account="Twitte2r" Home="Home" content="welco2me to the free world!"/>
        {/* <Grid
       container
       spacing={2}
