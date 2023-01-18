@@ -3,26 +3,31 @@ import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { useState, useEffect } from 'react';
+import Button from '@mui/material';
 
 
 
+export default function Card({userDetails}) {
 
-export default function Card({ userDetails }) {
 
-
+    
     return (
         <div>
+           
+        
+       {userDetails.map((user)=>{
 
+        return    <p>{user.username}</p>;
+       })} 
             <Grid container spancing={2} justifyContent="center" style={{ backgroundColor: "#ccb1f2" }}>
                 <Grid item sm={8} md={6}>
                     <Paper variant='outlined' elevation={4} sx={{ p: 2, margin: 5, maxWidth: 400, backgroundColor: "#f2deb1" }}>
 
-                        {/* <Card variant="outlined"> */}
                         <Grid container>
                             <Grid item sm={8} md={6}>
-                                <Typography gutterBottom variant='tittle' color='primary'>{userDetails.Home}</Typography>
+                                <Typography gutterBottom variant='tittle' color='primary'>{userDetails.account}</Typography>
                                 <Grid item>
-                                    <Typography gutterButton variant='subtittle2' color="primary">{userDetails.accountname}</Typography>
+                                    <Typography gutterButton variant='subtittle2' color="primary">{userDetails.headline}</Typography>
                                 </Grid>
                             </Grid>
                             <Grid container alignItems="center">
@@ -32,30 +37,28 @@ export default function Card({ userDetails }) {
                         </Grid>
                         <Grid container>
                             <Grid item sm={8} md={6}>
-                                <Typography color="text.secondary" variant='body3'>{userDetails.content}</Typography>
+                                <Typography color="text.secondary" variant='body3'>{userDetails.comment}</Typography>
                             </Grid>
-                            <Grid container>
+                            <Grid container alignItems="center">
                                 <Grid item sm={8} md={6}>
-                                    {/* <Typography color="text.secondary" variant="body4">{userDetails.comment}</Typography> */}
-                                    {/* <input type="text" value={name.firstName} onChange={e => setName({firstName: e.target.value})}/> */}
-                                    {/* <Typography value={users.username} onChange={e => setName({username: e.target.value})}> </Typography> */}
-                                    {/* <Typography value={hi.hello} onChange={e => setName({hello: e.target.value})}> </Typography> */}
-                                    <Typography gutterButton variant='subtittle2' color="primary">{userDetails.username}</Typography>
+                                <FavoriteBorderIcon>{userDetails.like}</FavoriteBorderIcon>
+                                <Typography color="primary" variant="body4">{userDetails.like}</Typography>
                                 </Grid>
                             </Grid>
+                            
                         </Grid>
-                        <Grid container>
+                        {/* <Grid container>
                             <Grid item>
-                                <FavoriteBorderIcon></FavoriteBorderIcon>
+                            <Button onClick={handleClick}></Button> 
                             </Grid>
-                        </Grid>
-                        {/* </Card> */}
+                        </Grid> */}
                     </Paper>
                 </Grid>
             </Grid>
 
         </div>
     )
+    
 }
 
 
